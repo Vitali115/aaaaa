@@ -1,0 +1,6 @@
+{
+    "name": "Keytech - Scheduler",
+    "version": "1.0.0",
+    "description": "Keytech Workplace Scheduler Management System",
+    "main": "index.js"
+  }

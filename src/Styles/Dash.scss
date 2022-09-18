@@ -1,0 +1,99 @@
+.body-main {
+  position: relative;
+  .vector-bg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: calc(99vw);
+    margin-left: -15px;
+  }
+  .vector-bg- {
+    position: absolute;
+    width: calc(29vw);
+    bottom: 2;
+    opacity: 0.5;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.sede-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .sede-card {
+    position: relative;
+    background-color: #494949;
+    //   width: 322px;
+    // height: 518px;
+    width: 322px;
+    height: 518px;
+    border-radius: 28px;
+    padding: 15px;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    h3 {
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 70px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 25px;
+    }
+    a {
+      position: absolute;
+      bottom: 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.21);
+    }
+
+    .vector {
+      transform: translateY(10px);
+      position: absolute;
+      left: 15px;
+      transition: 0.2s;
+      fill: solid rgba(217, 217, 217, 0.22);
+      width: 63px;
+      opacity: 0.1;
+      height: 181px;
+    }
+    .vector- {
+      transform: translateY(90px);
+      position: absolute;
+      right: 15px;
+      transition: 0.2s;
+      opacity: 0.1;
+      width: 92px;
+      height: 97px;
+    }
+  }
+
+  .sede-card:hover {
+    background-color: #4f4f4f;
+    .vector {
+      opacity: 1;
+      transform: translateY(0px);
+      transition-delay: 0.25s;
+
+      width: 183px;
+      height: 201px;
+    }
+    .vector- {
+      opacity: 1;
+      transform: translateY(80px);
+      transition-delay: 0.15s;
+      width: 72px;
+    }
+    a {
+      color: white;
+      transition-delay: 0.25s;
+    }
+  }
+}
